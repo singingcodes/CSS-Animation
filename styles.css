@@ -55,16 +55,11 @@
   top: 0;
   left: 0;
 }
-/* .add-track {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(36, 34, 34, 0.75);
-}
-.add-track:hover {
-  opacity: 1;
-  transition: box-shadow 0.3s;
-} */
 
+.button-class {
+  display: flex;
+  justify-content: center;
+}
 .box {
   transition: box-shadow 0.6s;
   border-radius: 5px;

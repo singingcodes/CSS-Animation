@@ -6,7 +6,7 @@
 // 5) Append the list items in the unordered list
 // 6) Append the unordered list in the document. The list should appear in the page.
 // -->
-let genres = ["Comedy", "Drama", "Romance", "Horror", "Sci-Fi", "Documentary"];
+//let genres = ["Comedy", "Drama", "Romance", "Horror", "Sci-Fi", "Documentary"];
 let unorderedList = document.createElement("ul");
 for (let i = 0; i < genres.length; i++) {
   let listItem = document.createElement("li");
