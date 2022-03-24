@@ -1,0 +1,79 @@
+/* EXERCISE 1
+            For every Album displayed in the page we'd like to have a consistent appearance.
+            Create the template of an Album component (you can start from a bootstrap one or create your own)
+            You will use it to display every album in the page.
+            
+            You should have consistency in these elements:
+            - The album card
+            - The album cover
+            - The album title
+            - The album group / singer / dj
+            - The album genre
+            - The album duration
+            - etc
+
+            create CSS rules to style them if needed
+            ...to make sure every Album component looks the same.
+         */
+@keyframes fadeIn {
+  0% {
+    background-color: rgb(88, 72, 72);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: rgb(207, 207, 66);
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: rgb(97, 97, 236);
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: rgb(90, 216, 90);
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: rgb(218, 68, 68);
+    left: 0px;
+    top: 0px;
+  }
+}
+.jumbotron {
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+.card-cont {
+  position: relative;
+}
+.badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* .add-track {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(36, 34, 34, 0.75);
+}
+.add-track:hover {
+  opacity: 1;
+  transition: box-shadow 0.3s;
+} */
+
+.box {
+  transition: box-shadow 0.6s;
+  border-radius: 5px;
+  background-color: rgb(158, 158, 245);
+  width: 100px;
+  height: 40px;
+}
+.box:hover {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(54, 42, 42, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(129, 121, 121, 0.25);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
